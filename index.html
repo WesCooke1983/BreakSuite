@@ -1,186 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BreakSuite - Break Smarter, Ship Faster</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <title>BreakSuite</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #0e0e0e;
-      color: #fff;
-      line-height: 1.6;
+      font-family: Arial, sans-serif;
+      background-color: #0d1117;
+      color: #ffffff;
+      text-align: center;
     }
 
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 2rem;
+      padding: 3rem 1rem;
     }
 
     header img {
-      height: 48px;
+      max-width: 200px;
+      height: auto;
+      display: block;
+      margin: 0 auto 1.5rem auto;
     }
 
-    .hero {
-      text-align: center;
-      padding: 4rem 2rem 3rem;
-    }
-
-    .hero h1 {
+    header h1 {
       font-size: 3rem;
-      font-weight: 800;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.25rem;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      padding: 4rem 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .feature {
-      background: #1c1c1c;
-      border-radius: 12px;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .feature h3 {
       margin-bottom: 0.5rem;
     }
 
-    .how-it-works {
-      padding: 4rem 2rem;
-      background: #181818;
-      text-align: center;
+    header p {
+      font-size: 1.25rem;
+      color: #c9d1d9;
     }
 
-    .how-it-works h2 {
-      margin-bottom: 2rem;
+    section {
+      padding: 2rem 1rem;
     }
 
-    .steps {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      max-width: 800px;
-      margin: auto;
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
 
-    .step {
-      background: #222;
-      padding: 2rem;
-      border-radius: 10px;
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
     }
 
     .cta {
-      padding: 4rem 2rem;
-      text-align: center;
+      margin-top: 2rem;
     }
 
-    .cta button {
-      font-size: 1.2rem;
-      padding: 1rem 2rem;
-      background: #2a9d8f;
-      border: none;
-      border-radius: 8px;
-      color: #fff;
-      cursor: pointer;
+    .cta a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #238636;
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      border-radius: 5px;
     }
 
-    .cta p {
-      margin-top: 1rem;
-      font-size: 0.95rem;
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #8b949e;
     }
   </style>
 </head>
-
 <body>
   <header>
-    <!-- Hero Section with Centered Logo -->
-<section class="hero" style="text-align: center; padding: 80px 20px;">
-  <img src="logo.png" alt="BreakSuite Logo" style="max-width: 240px; height: auto; margin-bottom: 30px;" />
-  <h1 style="font-size: 3em; margin-bottom: 10px;">BreakSuite</h1>
-  <p style="font-size: 1.5em; color: #ccc;">Break Smarter – Ship Faster</p>
-  <p style="max-width: 600px; margin: 30px auto; font-size: 1.1em; line-height: 1.6; color: #bbb;">
-    The all-in-one platform to organize breaks, streamline sorting, track profits, and ship with ease. Seamless hobby tools for modern breakers.
-  </p>
-  <a href="https://tally.so/r/wQQVMX" target="_blank" style="display: inline-block; padding: 15px 30px; background-color: #FF5A5F; color: #fff; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 1.1em; margin-top: 20px;">
-    Join the Waitlist
-  </a>
-</section>
+    <img src="logo.png" alt="BreakSuite Logo" />
+    <h1>BreakSuite</h1>
+    <p>Break Smarter – Ship Faster</p>
+  </header>
 
-
-  <section class="hero">
-    <h1>Break Smarter – Ship Faster</h1>
-    <p>The all-in-one platform to organize breaks, streamline sorting, track profits, and ship with ease. Seamless hobby tools for modern breakers.</p>
+  <section>
+    <h2>Key Features</h2>
+    <ul>
+      <li>⚡ Break Organizer – Track teams, spots, and checklists with ease</li>
+      <li>📦 Automated Sorting – Simplify post-break logistics and team allocations</li>
+      <li>📈 Profit Tracker – Know your margins and stay on top of your business</li>
+      <li>🎲 Randomizer Tool – Built-in spot randomization for fair team assignments</li>
+      <li>🚚 Integrated Shipping – Seamlessly generate labels and ship faster</li>
+    </ul>
   </section>
 
-  <section class="features">
-    <div class="feature">
-      <h3>Break Organizer</h3>
-      <p>Manage team and player breaks with customizable templates and checklists.</p>
-    </div>
-    <div class="feature">
-      <h3>Automated Sorting</h3>
-      <p>Upload checklists and let the system pre-sort entries for post-break efficiency.</p>
-    </div>
-    <div class="feature">
-      <h3>Integrated Shipping</h3>
-      <p>Generate shipping labels from your break dashboard. Easy, accurate, fast.</p>
-    </div>
-    <div class="feature">
-      <h3>Profit Tracker</h3>
-      <p>Know your margins per break and track what each team or spot cost and earned.</p>
-    </div>
-    <div class="feature">
-      <h3>Randomizer Tool</h3>
-      <p>Secure, reliable randomization you can trust for team assignments.</p>
-    </div>
-    <div class="feature">
-      <h3>How It Works</h3>
-      <p>Three simple steps: Set up, sort & track, then ship.</p>
-    </div>
-  </section>
-
-  <section class="how-it-works">
+  <section>
     <h2>How It Works</h2>
-    <div class="steps">
-      <div class="step">
-        <h3>1. Create a Break</h3>
-        <p>Choose a break template, assign teams or players, and upload a checklist.</p>
-      </div>
-      <div class="step">
-        <h3>2. Sort & Track</h3>
-        <p>Enter hits, track costs, and use automated sorting tools to speed up the workflow.</p>
-      </div>
-      <div class="step">
-        <h3>3. Ship With Ease</h3>
-        <p>Generate shipping labels directly and notify buyers with one click.</p>
-      </div>
-    </div>
+    <p>BreakSuite brings everything together in one dashboard, so you can spend more time breaking and less time managing logistics. Simply create a break, track teams, sort hits, and ship—all in one flow.</p>
   </section>
 
   <section class="cta">
-    <button onclick="window.open('https://tally.so/r/wQQVMX', '_blank')">Join the Waitlist</button>
-    <p>Be the first to try the tools built for breakers, by breakers.</p>
+    <a href="https://tally.so/r/wQQVMX" target="_blank">Join the Waitlist</a>
   </section>
-</body>
 
+  <footer>
+    <p>© 2025 BreakSuite. All rights reserved.</p>
+  </footer>
+</body>
 </html>
