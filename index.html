@@ -4,181 +4,142 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BreakSuite – Break Smarter, Ship Faster</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: Arial, sans-serif;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
       background-color: #0f0f0f;
-      color: #fff;
+      color: #ffffff;
       line-height: 1.6;
     }
 
     header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem;
+      text-align: center;
+      padding: 40px 20px;
     }
 
     header img {
-      width: 160px;
+      width: 180px;
       height: auto;
-      margin-bottom: 1rem;
+      margin: 0 auto 20px;
+      display: block;
     }
 
     h1 {
-      font-size: 2rem;
-      margin: 0.5rem 0;
+      font-size: 3rem;
+      margin-bottom: 10px;
     }
 
-    p.tagline {
-      font-size: 1.2rem;
-      color: #aaa;
+    p.lead {
+      font-size: 1.25rem;
+      color: #ccc;
     }
 
     section {
-      padding: 3rem 1rem;
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
       text-align: center;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
     }
 
     .features {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 2rem;
-      max-width: 1000px;
-      margin: 0 auto;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      text-align: left;
     }
 
-    .feature-box {
+    .feature {
       background-color: #1a1a1a;
-      padding: 1.5rem;
+      padding: 20px;
       border-radius: 12px;
+      border: 1px solid #2a2a2a;
     }
 
-    .feature-box h3 {
-      margin-bottom: 0.5rem;
-      color: #ff9900;
-    }
-
-    .how-it-works {
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: #1a1a1a;
-      padding: 2rem;
+    iframe {
+      margin-top: 30px;
       border-radius: 12px;
-    }
-
-    .cta {
-      margin-top: 3rem;
-    }
-
-    .cta-button {
-      padding: 1rem 2rem;
-      font-size: 1.2rem;
-      background-color: #ff4500;
       border: none;
-      color: white;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .cta-button:hover {
-      background-color: #e03d00;
-    }
-
-    .waitlist form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-      max-width: 400px;
-      margin: 0 auto;
-    }
-
-    .waitlist input {
-      padding: 0.75rem;
-      width: 100%;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
     }
 
     footer {
       text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #666;
+      padding: 40px 20px;
+      background-color: #101010;
+      font-size: 0.875rem;
+      color: #777;
+    }
+
+    .cta-button {
+      margin-top: 25px;
+      padding: 14px 28px;
+      background-color: #3b82f6;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .cta-button:hover {
+      background-color: #2563eb;
     }
   </style>
 </head>
 <body>
 
+  <!-- Header / Hero Section -->
   <header>
-    <img src="logo.png" alt="BreakSuite Logo">
+    <img src="logo.png" alt="BreakSuite Logo" />
     <h1>BreakSuite</h1>
-    <p class="tagline">Break Smarter – Ship Faster</p>
+    <p class="lead">Break Smarter – Ship Faster</p>
+    <a href="#waitlist" class="cta-button">Join the Waitlist</a>
   </header>
 
+  <!-- Key Features -->
   <section>
-    <h2>Key Features</h2>
+    <h2>Powerful Tools for Modern Breakers</h2>
     <div class="features">
-      <div class="feature-box">
-        <h3>Break Organizer</h3>
-        <p>Streamline team and player assignments for any break format.</p>
-      </div>
-      <div class="feature-box">
-        <h3>Automated Sorting</h3>
-        <p>Easily track who gets what across multiple breaks.</p>
-      </div>
-      <div class="feature-box">
-        <h3>Profit Tracker</h3>
-        <p>Know your margins with real-time break profitability tracking.</p>
-      </div>
-      <div class="feature-box">
-        <h3>Randomizer Tool</h3>
-        <p>Built-in trusted randomizer for fair, quick team assignments.</p>
-      </div>
-      <div class="feature-box">
-        <h3>Integrated Shipping</h3>
-        <p>Seamless sort-and-ship workflows with major shipping platforms.</p>
-      </div>
+      <div class="feature"><strong>Break Organizer</strong><br/>Plan and manage breaks across all platforms.</div>
+      <div class="feature"><strong>Automated Sorting</strong><br/>Seamlessly match hits to teams or players.</div>
+      <div class="feature"><strong>Profit Tracker</strong><br/>Track costs, sales, and earnings per break.</div>
+      <div class="feature"><strong>Randomizer Tool</strong><br/>Built-in for fair team/player assignments.</div>
+      <div class="feature"><strong>Integrated Shipping</strong><br/>Sort and ship fast with built-in label creation.</div>
     </div>
   </section>
 
-  <section class="how-it-works">
+  <!-- How It Works -->
+  <section>
     <h2>How It Works</h2>
-    <p>1. Set up a break with teams, players, or spots.<br>
-    2. Track hits and sort cards automatically.<br>
-    3. Generate shipping labels and calculate profits in one place.<br>
-    BreakSuite takes care of the rest.</p>
+    <p>Set up a break in minutes, upload your checklist, assign spots, track your profits, and generate labels with ease. BreakSuite handles the backend so you can focus on the fun.</p>
   </section>
 
-  <!-- Join the Waitlist Section -->
-<section id="waitlist" class="py-16 bg-gray-900 text-white text-center">
-  <div class="max-w-3xl mx-auto px-4">
-    <h2 class="text-4xl font-bold mb-4">Join the Waitlist</h2>
-    <p class="mb-6 text-lg">Be the first to know when BreakSuite launches. Join our waitlist below.</p>
+  <!-- Join the Waitlist -->
+  <section id="waitlist">
+    <h2>Join the Waitlist</h2>
+    <p>Be the first to try BreakSuite and help shape the future of breaking.</p>
+    <iframe data-tally-src="https://tally.so/r/wQQVMX" loading="lazy" width="100%" height="400" title="Waitlist Form"></iframe>
+    <p style="font-size: 0.8rem; color: #888; margin-top: 20px;">All information is confidential. BreakSuite is currently under development.</p>
+  </section>
 
-    <!-- Correct Tally Embed -->
-    <iframe 
-      data-tally-src="https://tally.so/r/wQQVMX" 
-      loading="lazy" 
-      width="100%" 
-      height="400" 
-      frameborder="0" 
-      marginheight="0" 
-      marginwidth="0" 
-      title="Join Waitlist">
-    </iframe>
-
-    <!-- Legal Disclaimer -->
-    <p class="text-sm text-gray-400 mt-6 italic">All information submitted is protected and will not be shared. BreakSuite is currently under development.</p>
-  </div>
-</section>
-
+  <!-- Footer -->
   <footer>
-    &copy; 2025 BreakSuite. All rights reserved. Patent Pending.
+    © 2025 BreakSuite. All rights reserved. Patent Pending.
   </footer>
 
 </body>
